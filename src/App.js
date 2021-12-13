@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+const a = "hello"
+const b = "world"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header style={{ color: "red" }}>Titulo</header>
+      <form style={{ display: 'flex', flexDirection: 'column', alignContent: "center" }}>
+        <input style={{ width: '500px' }} type="text" placeholder={a} />
+        <input style={{ width: '500px' }} type="text" placeholder={b} />
+        <button style={{ width: '500px' }} type="submit">Enviar</button>
+      </form>
     </div>
   );
 }
