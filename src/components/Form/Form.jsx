@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import './Form.css'
+import styles from './Form.module.css'
 export default class Form extends Component {
     render() {
         return (
-            <form className="contato container">
+            <form className={`${styles.contato} ${styles.container}`} >
                 <fieldset>
                     <label htmlFor="name">Nome</label>
                     <input type="text" name="name" />
